@@ -1,0 +1,17 @@
+{
+  "name": "arcadias-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ertugrul Sencer",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
