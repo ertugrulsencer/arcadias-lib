@@ -46,11 +46,12 @@ mark {
   border-radius: 3px;
   padding: 2px 4px;
   font-size: 0.9rem;
-  background: var(--mark-bg, #fe0);
-  color: var(--mark-text, #282828); }
+  background: rgba(var(--mark-bg, 235, 200, 40), 1);
+  color: rgba(var(--mark-text, 240, 240, 240), 1); }
 
 hr {
-  border: 1px dashed rgba(var(--hr-color), 1); }
+  border: 1px dashed rgba(var(--hr-color), 1);
+  margin: var(--hr-y-spacing, 14px) var(--hr-x-spacing, 0); }
 
 body {
   font-size: 16px;
@@ -60,8 +61,8 @@ body {
   font-family: var(--font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif); }
 
 ::selection {
-  background: var(--color-primary, #ce224d);
-  color: var(--color-light, #f8f8f8); }
+  background: rgba(var(--color-primary, #ce224d), 0.8);
+  color: rgba(var(--color-light, #f8f8f8), 1); }
 
 /* Buttons */
 .btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light, .btn-dark {
