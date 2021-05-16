@@ -1,5 +1,5 @@
 /* Paddings */
-@for $index from 1 to 8 {
+@for $index from 1 through 8 {
   .pt-#{$index} {
     padding-top: #{$index * 0.2}rem;
   }
@@ -25,7 +25,7 @@
   }
 }
 /* Margins */
-@for $index from 1 to 8 {
+@for $index from 1 through 8 {
   .mt-#{$index} {
     margin-top: #{$index * 0.2}rem;
   }
