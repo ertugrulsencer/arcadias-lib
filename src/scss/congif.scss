@@ -1,0 +1,47 @@
+:root {
+  /*
+    ? Font ve yazı ayarları
+  */
+  --font: "Lato";
+  --select-text: text; /* Yazıların seçilm durumu */
+  /* 
+    ? Satır Yükseklikleri
+  */
+  --line-height: 125%; /* Genel satır yüksekliği */
+  --heading-line-height: 125%; /* Heading elementlerinin satır yüksekliği (h1, h2.. */
+  --paragraph-line-height: 150%;
+  /*
+    ? Renkler
+    ! Rgb değerleri aşağıdaki gibi girilmeli
+    * Örn: 255, 255, 255
+  */
+  --color-text: 17, 34, 70; /* Genel yazı rengi */
+  --color-primary: 206, 34, 77;
+  --color-secondary: 143, 130, 199;
+  --color-success: 38, 114, 76;
+  --color-danger: 190, 28, 28;
+  --color-warning: 238, 201, 20;
+  --color-info: 35, 119, 245;
+  --color-dark: 56, 56, 66;
+  --color-light: 232, 232, 232;
+  --color-gray: 151, 151, 135;
+  /*
+    ? Mark Renkleri
+  */
+  --mark-bg: var(--color-primary);
+  --mark-text: 248, 248, 248;
+  /* 
+    ? Buton ayarları
+  */
+  --btn-fw: 500; /* Buton font weight */
+  --btn-active-size: 0.98;
+  /* 
+    ? Yatay ayırıcı rengi 
+  */
+  --hr-color: var(--color-text);
+  /* 
+    ? Animasyon ayarları
+  */
+  --transition-time-btn: 300ms;
+  --transition-type-btn: linear;
+}

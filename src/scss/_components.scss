@@ -1,0 +1,61 @@
+/* Buttons */
+.btn {
+  &-primary,
+  &-secondary,
+  &-success,
+  &-danger,
+  &-warning,
+  &-info,
+  &-light,
+  &-dark {
+    @include btn;
+  }
+  &-primary {
+    --current-color: var(--color-primary);
+    border-color: rgba(var(--color-primary), 1);
+    background: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-light), 1);
+  }
+  &-secondary {
+    --current-color: var(--color-secondary);
+    border-color: rgba(var(--color-secondary), 1);
+    background: rgba(var(--color-secondary), 1);
+    color: rgba(var(--color-light), 1);
+  }
+  &-success {
+    --current-color: var(--color-success);
+    border-color: rgba(var(--color-success), 1);
+    background: rgba(var(--color-success), 1);
+    color: rgba(var(--color-light), 1);
+  }
+  &-danger {
+    --current-color: var(--color-danger);
+    border-color: rgba(var(--color-danger), 1);
+    background: rgba(var(--color-danger), 1);
+    color: rgba(var(--color-light), 1);
+  }
+  &-warning {
+    --current-color: var(--color-warning);
+    border-color: rgba(var(--color-warning), 1);
+    background: rgba(var(--color-warning), 1);
+    color: rgba(var(--color-dark), 1);
+  }
+  &-info {
+    --current-color: var(--color-info);
+    border-color: rgba(var(--color-info), 1);
+    background: rgba(var(--color-info), 1);
+    color: rgba(var(--color-light), 1);
+  }
+  &-light {
+    --current-color: var(--color-light);
+    border-color: rgba(var(--color-light), 1);
+    background: rgba(var(--color-light), 1);
+    color: rgba(var(--color-dark), 1);
+  }
+  &-dark {
+    --current-color: var(--color-dark);
+    border-color: rgba(var(--color-dark), 1);
+    background: rgba(var(--color-dark), 1);
+    color: rgba(var(--color-light), 1);
+  }
+}
