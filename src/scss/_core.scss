@@ -1,0 +1,52 @@
+/* Paddings */
+@for $index from 1 to 8 {
+  .pt-#{$index} {
+    padding-top: #{$index * 0.2}rem;
+  }
+  .pr-#{$index} {
+    padding-right: #{$index * 0.2}rem;
+  }
+  .pb-#{$index} {
+    padding-bottom: #{$index * 0.2}rem;
+  }
+  .pl-#{$index} {
+    padding-left: #{$index * 0.2}rem;
+  }
+  .px-#{$index} {
+    padding-left: #{$index * 0.2}rem;
+    padding-right: #{$index * 0.2}rem;
+  }
+  .py-#{$index} {
+    padding-top: #{$index * 0.2}rem;
+    padding-bottom: #{$index * 0.2}rem;
+  }
+  .pa-#{$index} {
+    padding: #{$index * 0.2}rem;
+  }
+}
+/* Margins */
+@for $index from 1 to 8 {
+  .mt-#{$index} {
+    margin-top: #{$index * 0.2}rem;
+  }
+  .mr-#{$index} {
+    margin-right: #{$index * 0.2}rem;
+  }
+  .mb-#{$index} {
+    margin-bottom: #{$index * 0.2}rem;
+  }
+  .ml-#{$index} {
+    margin-left: #{$index * 0.2}rem;
+  }
+  .mx-#{$index} {
+    margin-left: #{$index * 0.2}rem;
+    margin-right: #{$index * 0.2}rem;
+  }
+  .my-#{$index} {
+    margin-top: #{$index * 0.2}rem;
+    margin-bottom: #{$index * 0.2}rem;
+  }
+  .ma-#{$index} {
+    margin: #{$index * 0.2}rem;
+  }
+}
