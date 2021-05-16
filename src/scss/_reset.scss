@@ -33,11 +33,16 @@ mark {
 del,
 u {
   text-decoration-style: wavy;
-  text-decoration-color: var(--color-text, #282828);
+  text-decoration-color: rgba(var(--color-text, (32, 32, 42)), 1);
 }
 a {
-  text-decoration: none;
-  color: var(--color-primary, #282828);
+  text-decoration-color: transparent;
+  text-decoration-style: wavy;
+  color: rgba(var(--color-primary, (206, 34, 77)), 1);
+  transition: all 300ms ease-in-out;
+  &:hover {
+    text-decoration-color: rgba(var(--color-primary, (206, 34, 77)), 1);
+  }
 }
 small {
   font-size: 0.8rem;
