@@ -73,3 +73,33 @@
 .ma-auto {
   margin: auto;
 }
+
+.d- {
+  &-block {
+    display: block;
+  }
+  &-flex {
+    display: flex;
+  }
+  &-grid {
+    display: grid;
+  }
+  &-table {
+    display: table;
+  }
+  &-inline {
+    display: inline;
+  }
+  &-inline-flex {
+    display: inline-flex;
+  }
+  &-inline-grid {
+    display: inline-grid;
+  }
+  &-inline-table {
+    display: inline-table;
+  }
+  &-none {
+    display: none;
+  }
+}
