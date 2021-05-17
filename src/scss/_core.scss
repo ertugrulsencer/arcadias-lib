@@ -103,3 +103,33 @@
     display: none;
   }
 }
+
+.t {
+  /* Text Align */
+  &-start {
+    text-align: start;
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-end {
+    text-align: end;
+    text-align: right;
+  }
+  &-justify {
+    text-align: justify;
+  }
+  /* Text Cases */
+  &-to {
+    &-upper {
+      text-transform: uppercase;
+    }
+    &-lower {
+      text-transform: lowercase;
+    }
+    &-capitalize {
+      text-transform: capitalize;
+    }
+  }
+}

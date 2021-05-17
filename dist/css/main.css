@@ -418,6 +418,26 @@
 .d--none {
   display: none; }
 
+.t {
+  /* Text Align */
+  /* Text Cases */ }
+  .t-start {
+    text-align: start;
+    text-align: left; }
+  .t-center {
+    text-align: center; }
+  .t-end {
+    text-align: end;
+    text-align: right; }
+  .t-justify {
+    text-align: justify; }
+  .t-to-upper {
+    text-transform: uppercase; }
+  .t-to-lower {
+    text-transform: lowercase; }
+  .t-to-capitalize {
+    text-transform: capitalize; }
+
 * {
   user-select: var(--select-text, none);
   box-sizing: border-box; }
