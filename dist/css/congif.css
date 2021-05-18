@@ -21,6 +21,8 @@
   */
   --color-text: 17, 34, 70;
   /* Genel yazı rengi */
+  --color-border: 134, 24, 24;
+  /* Genel kenarlık rengi */
   --color-primary: 206, 34, 77;
   --color-secondary: 143, 130, 199;
   --color-success: 38, 114, 76;
