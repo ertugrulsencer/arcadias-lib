@@ -23,7 +23,7 @@
       var(--transition-type-btn, ease-in-out),
     transform 50ms ease-in-out, box-shadow 350ms ease-in-out;
   &:hover {
-    background: rgba(var(--current-color), 0.8);
+    background: rgba(var(--current-color), var(--btn-hover-opacity, 0.85));
   }
   &:active {
     transform: scale(var(--btn-active-size, 0.95));

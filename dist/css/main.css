@@ -569,7 +569,7 @@ body {
   box-shadow: 0 0 0 2.5px transparent;
   transition: background var(--transition-time-btn, 350ms) var(--transition-type-btn, ease-in-out), transform 50ms ease-in-out, box-shadow 350ms ease-in-out; }
   .btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-info:hover, .btn-light:hover, .btn-dark:hover {
-    background: rgba(var(--current-color), 0.8); }
+    background: rgba(var(--current-color), var(--btn-hover-opacity, 0.85)); }
   .btn-primary:active, .btn-secondary:active, .btn-success:active, .btn-danger:active, .btn-warning:active, .btn-info:active, .btn-light:active, .btn-dark:active {
     transform: scale(var(--btn-active-size, 0.95)); }
   .btn-primary:focus, .btn-secondary:focus, .btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-info:focus, .btn-light:focus, .btn-dark:focus {
