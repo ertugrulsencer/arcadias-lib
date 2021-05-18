@@ -466,7 +466,8 @@
 
 .t {
   /* Text Align */
-  /* Text Cases */ }
+  /* Text Cases */
+  /* Text Colors */ }
   .t-start {
     text-align: start;
     text-align: left; }
@@ -483,6 +484,24 @@
     text-transform: lowercase; }
   .t-to-capitalize {
     text-transform: capitalize; }
+  .t-primary {
+    color: rgba(var(--color-primary), 1); }
+  .t-secondary {
+    color: rgba(var(--color-secondary), 1); }
+  .t-success {
+    color: rgba(var(--color-success), 1); }
+  .t-danger {
+    color: rgba(var(--color-danger), 1); }
+  .t-warning {
+    color: rgba(var(--color-warning), 1); }
+  .t-info {
+    color: rgba(var(--color-info), 1); }
+  .t-dark {
+    color: rgba(var(--color-dark), 1); }
+  .t-light {
+    color: rgba(var(--color-light), 1); }
+  .t-gray {
+    color: rgba(var(--color-gray), 1); }
 
 * {
   user-select: var(--select-text, none);

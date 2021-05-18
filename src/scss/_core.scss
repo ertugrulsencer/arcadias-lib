@@ -132,4 +132,32 @@
       text-transform: capitalize;
     }
   }
+  /* Text Colors */
+  &-primary {
+    color: rgba(var(--color-primary), 1);
+  }
+  &-secondary {
+    color: rgba(var(--color-secondary), 1);
+  }
+  &-success {
+    color: rgba(var(--color-success), 1);
+  }
+  &-danger {
+    color: rgba(var(--color-danger), 1);
+  }
+  &-warning {
+    color: rgba(var(--color-warning), 1);
+  }
+  &-info {
+    color: rgba(var(--color-info), 1);
+  }
+  &-dark {
+    color: rgba(var(--color-dark), 1);
+  }
+  &-light {
+    color: rgba(var(--color-light), 1);
+  }
+  &-gray {
+    color: rgba(var(--color-gray), 1);
+  }
 }
