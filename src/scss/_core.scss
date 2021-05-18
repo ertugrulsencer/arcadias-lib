@@ -168,122 +168,58 @@
     --border-width: #{$index}px;
     border-width: var(--border-width, #{$index}px);
     border-style: var(--border-style, solid);
-    &-primary {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-primary, var(--color-border), (34, 34, 34)),
-        1
-      );
+    border-color: rgba(var(--color-border, (34, 34, 34)), 1);
+    /* Border Styles */
+    @each $style in solid, dashed, dotted, double {
+      &-#{$style} {
+        --border-style: #{$style};
+        border-style: var(--border-style, #{$style});
+        border-color: rgba(var(--color-border), 1);
+        border-width: var(--border-width, #{$index}px);
+        @each $color in primary, secondary, success, danger, warning, info, dark,
+          light, gray
+        {
+          &-#{$color} {
+            --color-border: var(--color-#{$color});
+            --border-style: #{$style};
+            border-width: var(--border-width, #{$index}px);
+            border-style: var(--border-style, solid);
+            border-color: rgba(var(--color-border, (34, 34, 34)), 1);
+          }
+        }
+      }
     }
-    &-secondary {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-secondary, var(--color-border), (34, 34, 34)),
-        1
-      );
-    }
-    &-success {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-success, var(--color-border), (34, 34, 34)),
-        1
-      );
-    }
-    &-danger {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-danger, var(--color-border), (34, 34, 34)),
-        1
-      );
-    }
-    &-warning {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-warning, var(--color-border), (34, 34, 34)),
-        1
-      );
-    }
-    &-info {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-info, var(--color-border), (34, 34, 34)),
-        1
-      );
-    }
-    &-dark {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-dark, var(--color-border), (34, 34, 34)),
-        1
-      );
-    }
-    &-light {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-light, var(--color-border), (34, 34, 34)),
-        1
-      );
-    }
-    &-gray {
-      border-width: var(--border-width, #{$index}px);
-      border-style: var(--border-style, solid);
-      border-color: rgba(
-        var(--color-gray, var(--color-border), (34, 34, 34)),
-        1
-      );
+    @each $color in primary, secondary, success, danger, warning, info, dark,
+      light, gray
+    {
+      &-#{$color} {
+        --color-border: var(--color-#{$color});
+        border-width: var(--border-width, #{$index}px);
+        border-style: var(--border-style, solid);
+        border-color: rgba(var(--color-border, (34, 34, 34)), 1);
+      }
     }
   }
 }
-.b-primary {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-primary), 1);
-}
-.b-secondary {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-secondary), 1);
-}
-.b-success {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-success), 1);
-}
-.b-danger {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-danger), 1);
-}
-.b-warning {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-warning), 1);
-}
-.b-info {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-info), 1);
-}
-.b-dark {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-dark), 1);
-}
-.b-light {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-light), 1);
-}
-.b-gray {
-  border-width: var(--border-width, 1px);
-  border-style: var(--border-style, solid);
-  border-color: rgba(var(--color-gray), 1);
+.b {
+  /* Border Colors */
+  @each $color in primary, secondary, success, danger, warning, info, dark,
+    light, gray
+  {
+    &-#{$color} {
+      --color-border: var(--color-#{$color});
+      border-width: var(--border-width, 1px);
+      border-style: var(--border-style, solid);
+      border-color: rgba(var(--color-border, (34, 34, 34)), 1);
+    }
+  }
+  /* Border Styles */
+  @each $style in solid, dashed, dotted, double {
+    &-#{$style} {
+      --border-style: #{$style};
+      border-style: var(--border-style, #{$style});
+      border-width: var(--border-width, 1px);
+      border-color: rgba(var(--color-border, (34, 34, 34)), 1);
+    }
+  }
 }
