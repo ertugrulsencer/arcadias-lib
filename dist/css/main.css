@@ -1,4 +1,27 @@
 /* Paddings */
+.pt-0 {
+  padding-top: 0rem; }
+
+.pr-0 {
+  padding-right: 0rem; }
+
+.pb-0 {
+  padding-bottom: 0rem; }
+
+.pl-0 {
+  padding-left: 0rem; }
+
+.px-0 {
+  padding-left: 0rem;
+  padding-right: 0rem; }
+
+.py-0 {
+  padding-top: 0rem;
+  padding-bottom: 0rem; }
+
+.pa-0 {
+  padding: 0rem; }
+
 .pt-1 {
   padding-top: 0.2rem; }
 
@@ -184,6 +207,29 @@
   padding: 1.6rem; }
 
 /* Margins */
+.mt-0 {
+  margin-top: 0rem; }
+
+.mr-0 {
+  margin-right: 0rem; }
+
+.mb-0 {
+  margin-bottom: 0rem; }
+
+.ml-0 {
+  margin-left: 0rem; }
+
+.mx-0 {
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
+.my-0 {
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+
+.ma-0 {
+  margin: 0rem; }
+
 .mt-1 {
   margin-top: 0.2rem; }
 
