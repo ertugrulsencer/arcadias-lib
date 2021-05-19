@@ -171,9 +171,9 @@
     &-#{$color} {
       --bg: var(--color-#{$color});
       background: rgba(var(--bg, var(--color-#{$color})), var(--bg-opacity, 1));
-      @for $index from 1 through 5 {
+      @for $index from 1 through 10 {
         &-#{$index} {
-          --bg-opacity: #{1 / $index};
+          --bg-opacity: #{$index * 0.10};
           background: rgba(
             var(--bg, var(--color-#{$color})),
             var(--bg-opacity, 1)
