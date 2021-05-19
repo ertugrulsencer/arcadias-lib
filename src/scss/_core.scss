@@ -245,6 +245,7 @@
     }
   }
 }
+/* Radius */
 .radius {
   @for $index from 0 through 10 {
     &-#{$index} {
@@ -253,9 +254,22 @@
     }
   }
 }
+/* Circle */
 .circle {
   border-radius: 100%;
 }
+/* Ellipse */
 .ellipse {
   border-radius: 50%;
+}
+/* Shadow */
+.shadow {
+  box-shadow: 0 0 var(--box-shadow, 14px) calc(var(--box-shadow, 14px) / -2)
+    rgba(var(--color-shadow, (34, 34, 34)), 0.9);
+  @each $color in $colors {
+    &-#{$color} {
+      @extend .shadow;
+      --color-shadow: var(--color-#{$color});
+    }
+  }
 }

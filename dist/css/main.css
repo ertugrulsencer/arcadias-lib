@@ -2611,6 +2611,7 @@
     border-width: var(--border-width, 1px);
     border-color: rgba(var(--color-border, 34, 34, 34), 1); }
 
+/* Radius */
 .radius-0 {
   --radius-all: 0rem;
   border-radius: var(--radius-all); }
@@ -2655,11 +2656,35 @@
   --radius-all: 1.5rem;
   border-radius: var(--radius-all); }
 
+/* Circle */
 .circle {
   border-radius: 100%; }
 
+/* Ellipse */
 .ellipse {
   border-radius: 50%; }
+
+/* Shadow */
+.shadow, .shadow-primary, .shadow-secondary, .shadow-success, .shadow-danger, .shadow-warning, .shadow-info, .shadow-dark, .shadow-light, .shadow-gray {
+  box-shadow: 0 0 var(--box-shadow, 14px) calc(var(--box-shadow, 14px) / -2) rgba(var(--color-shadow, 34, 34, 34), 0.9); }
+  .shadow-primary {
+    --color-shadow: var(--color-primary); }
+  .shadow-secondary {
+    --color-shadow: var(--color-secondary); }
+  .shadow-success {
+    --color-shadow: var(--color-success); }
+  .shadow-danger {
+    --color-shadow: var(--color-danger); }
+  .shadow-warning {
+    --color-shadow: var(--color-warning); }
+  .shadow-info {
+    --color-shadow: var(--color-info); }
+  .shadow-dark {
+    --color-shadow: var(--color-dark); }
+  .shadow-light {
+    --color-shadow: var(--color-light); }
+  .shadow-gray {
+    --color-shadow: var(--color-gray); }
 
 * {
   user-select: var(--select-text, none);
