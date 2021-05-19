@@ -162,6 +162,28 @@
   }
 }
 
+/* Background Colors */
+.bg {
+  &-none {
+    background: transparent;
+  }
+  @each $color in $colors {
+    &-#{$color} {
+      --bg: var(--color-#{$color});
+      background: rgba(var(--bg, var(--color-#{$color})), var(--bg-opacity, 1));
+      @for $index from 1 through 5 {
+        &-#{$index} {
+          --bg-opacity: #{1 / $index};
+          background: rgba(
+            var(--bg, var(--color-#{$color})),
+            var(--bg-opacity, 1)
+          );
+        }
+      }
+    }
+  }
+}
+
 /* Borders */
 @for $index from 0 through 5 {
   .b-#{$index} {

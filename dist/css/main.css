@@ -503,6 +503,181 @@
   .t-gray {
     color: rgba(var(--color-gray), 1); }
 
+/* Background Colors */
+.bg-none {
+  background: transparent; }
+
+.bg-primary {
+  --bg: var(--color-primary);
+  background: rgba(var(--bg, var(--color-primary)), var(--bg-opacity, 1)); }
+  .bg-primary-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-primary)), var(--bg-opacity, 1)); }
+  .bg-primary-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-primary)), var(--bg-opacity, 1)); }
+  .bg-primary-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-primary)), var(--bg-opacity, 1)); }
+  .bg-primary-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-primary)), var(--bg-opacity, 1)); }
+  .bg-primary-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-primary)), var(--bg-opacity, 1)); }
+
+.bg-secondary {
+  --bg: var(--color-secondary);
+  background: rgba(var(--bg, var(--color-secondary)), var(--bg-opacity, 1)); }
+  .bg-secondary-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-secondary)), var(--bg-opacity, 1)); }
+  .bg-secondary-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-secondary)), var(--bg-opacity, 1)); }
+  .bg-secondary-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-secondary)), var(--bg-opacity, 1)); }
+  .bg-secondary-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-secondary)), var(--bg-opacity, 1)); }
+  .bg-secondary-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-secondary)), var(--bg-opacity, 1)); }
+
+.bg-success {
+  --bg: var(--color-success);
+  background: rgba(var(--bg, var(--color-success)), var(--bg-opacity, 1)); }
+  .bg-success-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-success)), var(--bg-opacity, 1)); }
+  .bg-success-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-success)), var(--bg-opacity, 1)); }
+  .bg-success-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-success)), var(--bg-opacity, 1)); }
+  .bg-success-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-success)), var(--bg-opacity, 1)); }
+  .bg-success-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-success)), var(--bg-opacity, 1)); }
+
+.bg-danger {
+  --bg: var(--color-danger);
+  background: rgba(var(--bg, var(--color-danger)), var(--bg-opacity, 1)); }
+  .bg-danger-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-danger)), var(--bg-opacity, 1)); }
+  .bg-danger-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-danger)), var(--bg-opacity, 1)); }
+  .bg-danger-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-danger)), var(--bg-opacity, 1)); }
+  .bg-danger-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-danger)), var(--bg-opacity, 1)); }
+  .bg-danger-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-danger)), var(--bg-opacity, 1)); }
+
+.bg-warning {
+  --bg: var(--color-warning);
+  background: rgba(var(--bg, var(--color-warning)), var(--bg-opacity, 1)); }
+  .bg-warning-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-warning)), var(--bg-opacity, 1)); }
+  .bg-warning-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-warning)), var(--bg-opacity, 1)); }
+  .bg-warning-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-warning)), var(--bg-opacity, 1)); }
+  .bg-warning-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-warning)), var(--bg-opacity, 1)); }
+  .bg-warning-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-warning)), var(--bg-opacity, 1)); }
+
+.bg-info {
+  --bg: var(--color-info);
+  background: rgba(var(--bg, var(--color-info)), var(--bg-opacity, 1)); }
+  .bg-info-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-info)), var(--bg-opacity, 1)); }
+  .bg-info-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-info)), var(--bg-opacity, 1)); }
+  .bg-info-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-info)), var(--bg-opacity, 1)); }
+  .bg-info-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-info)), var(--bg-opacity, 1)); }
+  .bg-info-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-info)), var(--bg-opacity, 1)); }
+
+.bg-dark {
+  --bg: var(--color-dark);
+  background: rgba(var(--bg, var(--color-dark)), var(--bg-opacity, 1)); }
+  .bg-dark-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-dark)), var(--bg-opacity, 1)); }
+  .bg-dark-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-dark)), var(--bg-opacity, 1)); }
+  .bg-dark-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-dark)), var(--bg-opacity, 1)); }
+  .bg-dark-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-dark)), var(--bg-opacity, 1)); }
+  .bg-dark-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-dark)), var(--bg-opacity, 1)); }
+
+.bg-light {
+  --bg: var(--color-light);
+  background: rgba(var(--bg, var(--color-light)), var(--bg-opacity, 1)); }
+  .bg-light-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-light)), var(--bg-opacity, 1)); }
+  .bg-light-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-light)), var(--bg-opacity, 1)); }
+  .bg-light-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-light)), var(--bg-opacity, 1)); }
+  .bg-light-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-light)), var(--bg-opacity, 1)); }
+  .bg-light-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-light)), var(--bg-opacity, 1)); }
+
+.bg-gray {
+  --bg: var(--color-gray);
+  background: rgba(var(--bg, var(--color-gray)), var(--bg-opacity, 1)); }
+  .bg-gray-1 {
+    --bg-opacity: 1;
+    background: rgba(var(--bg, var(--color-gray)), var(--bg-opacity, 1)); }
+  .bg-gray-2 {
+    --bg-opacity: 0.5;
+    background: rgba(var(--bg, var(--color-gray)), var(--bg-opacity, 1)); }
+  .bg-gray-3 {
+    --bg-opacity: 0.33333;
+    background: rgba(var(--bg, var(--color-gray)), var(--bg-opacity, 1)); }
+  .bg-gray-4 {
+    --bg-opacity: 0.25;
+    background: rgba(var(--bg, var(--color-gray)), var(--bg-opacity, 1)); }
+  .bg-gray-5 {
+    --bg-opacity: 0.2;
+    background: rgba(var(--bg, var(--color-gray)), var(--bg-opacity, 1)); }
+
 /* Borders */
 .b-0 {
   --border-width: 0px;
