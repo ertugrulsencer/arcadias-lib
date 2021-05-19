@@ -173,7 +173,7 @@
       background: rgba(var(--bg, var(--color-#{$color})), var(--bg-opacity, 1));
       @for $index from 1 through 10 {
         &-#{$index} {
-          --bg-opacity: #{$index * 0.10};
+          --bg-opacity: #{$index * 0.1};
           background: rgba(
             var(--bg, var(--color-#{$color})),
             var(--bg-opacity, 1)
@@ -244,4 +244,18 @@
       border-color: rgba(var(--color-border, (34, 34, 34)), 1);
     }
   }
+}
+.radius {
+  @for $index from 0 through 10 {
+    &-#{$index} {
+      --radius-all: #{$index * 0.15}rem;
+      border-radius: var(--radius-all);
+    }
+  }
+}
+.circle {
+  border-radius: 100%;
+}
+.ellipse {
+  border-radius: 50%;
 }
