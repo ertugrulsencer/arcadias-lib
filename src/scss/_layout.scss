@@ -1,0 +1,17 @@
+.row {
+  @include row;
+  --row-gap: var(--row-gap, 1rem);
+  .col {
+    flex: 1;
+    &:not(:last-child) {
+      margin-right: calc(var(--row-gap, 1rem));
+    }
+    @for $index from 1 through 18 {
+      &-#{$index} {
+        flex-basis: calc((100% / var(--row-separate, 12)) * #{$index});
+        margin-right: calc((var(--row-gap, 1rem) / 2) * -1);
+        padding-right: calc(var(--row-gap, 1rem) / 2);
+      }
+    }
+  }
+}

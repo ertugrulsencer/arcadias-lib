@@ -33,3 +33,9 @@
     background: rgba(var(--current-color), 0.85);
   }
 }
+@mixin row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
