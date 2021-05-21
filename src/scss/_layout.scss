@@ -1,6 +1,10 @@
 .row {
   @include row;
   --row-gap: var(--row-gap, 1rem);
+  & :is(.col-12) {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
   .col {
     flex: 1;
     &:not(:last-child) {
