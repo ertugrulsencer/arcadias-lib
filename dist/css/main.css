@@ -7,7 +7,7 @@
   .row .col {
     flex: 1; }
     .row .col:not(:last-child) {
-      padding-right: calc(var(--row-gap, 1rem)); }
+      margin-right: calc(var(--row-gap, 1rem)); }
     .row .col-1 {
       flex-basis: calc((100% / var(--row-separate, 12)) * 1);
       margin-right: calc((var(--row-gap, 1rem) / 2) * -1);
