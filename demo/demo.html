@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components Testing</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Arcadias Lib Css -->
+    <link rel="stylesheet" href="../dist/css/all.min.css" />
+    <style>
+      body {
+        margin: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1. Heading</h1>
+    <h2>2. Heading</h2>
+    <h3>3. Heading</h3>
+    <h4>4. Heading</h4>
+    <h5>5. Heading</h5>
+    <h6>6. Heading</h6>
+    <hr />
+    <p>
+      P Element Lorem ipsum dolor sit <b>amet</b> consectetur
+      <i>adipisicing</i> elit. Corrupti, quo, a nostrum fugit soluta odio harum
+      odit inventore eos <a href="https://microsoft.com/">Microsoft</a> dolore
+      unde neque adipisci voluptates, necessitatibus illo perspiciatis quae?
+    </p>
+    <hr />
+    <span>Span Element</span> <br />
+    <b>Strong Element</b> <br />
+    <i>Italic Element</i> <br />
+    <strong>Strong Element (HTML5)</strong> <br />
+    <em>Italic Element (HTML5)</em> <br />
+    <u>Underline Element (HTML5)</u> <br />
+    <del>Del Element</del> <br />
+    <mark>Mark</mark> <br />
+    <small>Small Element</small>
+    <hr />
+    <div class="b-1-gray pa-2 radius-1 my-2 row">
+      <div class="col">
+        <div class="b-1-gray radius-1 py-1 px-2">Column</div>
+      </div>
+      <div class="col">
+        <div class="b-1-gray radius-1 py-1 px-2">Column</div>
+      </div>
+      <div class="col">
+        <div class="b-1-gray radius-1 py-1 px-2">Column</div>
+      </div>
+    </div>
+    <div class="b-1-gray pa-2 radius-1 my-2 row">
+      <div class="col-12">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 12</div>
+      </div>
+    </div>
+    <div class="b-1-gray pa-2 radius-1 my-2 row">
+      <div class="col-6">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 6</div>
+      </div>
+      <div class="col-6">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 6</div>
+      </div>
+    </div>
+    <div class="b-1-gray pa-2 radius-1 my-2 row">
+      <div class="col-4">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 4</div>
+      </div>
+      <div class="col-4">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 4</div>
+      </div>
+      <div class="col-4">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 4</div>
+      </div>
+    </div>
+    <div class="b-1-gray pa-2 radius-1 my-2 row">
+      <div class="col-3">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 3</div>
+      </div>
+      <div class="col-3">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 3</div>
+      </div>
+      <div class="col-3">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 3</div>
+      </div>
+      <div class="col-3">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 3</div>
+      </div>
+    </div>
+    <div class="b-1-gray pa-2 radius-1 my-2 row">
+      <div class="col-3">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 3</div>
+      </div>
+      <div class="col-6">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 6</div>
+      </div>
+      <div class="col-3">
+        <div class="b-1-gray radius-1 py-1 px-2">Column 3</div>
+      </div>
+    </div>
+    <div class="b-1-gray pa-2 radius-1 my-2 row">
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+      <div class="col-1">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 1</div>
+      </div>
+    </div>
+    <hr />
+    <div style="--row-separate: 4" class="b-1-gray radius-1 pa-2 my-2 row">
+      <div class="col-2">
+        <div class="b-1-gray radius-1 py-1 px-2 mb-2">Col 2</div>
+      </div>
+      <div class="col-2">
+        <div class="b-1-gray radius-1 py-1 px-2 mb-2">Col 2</div>
+      </div>
+      <div class="col-2">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 2</div>
+      </div>
+      <div class="col-2">
+        <div class="b-1-gray radius-1 py-1 px-2">Col 2</div>
+      </div>
+    </div>
+    <hr />
+    <a href="#" class="btn-primary">Primary</a>
+    <a href="#" class="btn-secondary">Secondary</a>
+    <a href="#" class="btn-success">Success</a>
+    <a href="#" class="btn-danger">Danger</a>
+    <a href="#" class="btn-warning">Warning</a>
+    <a href="#" class="btn-info">Info</a>
+    <a href="#" class="btn-dark">Dark</a>
+    <a href="#" class="btn-light">Light</a>
+    <hr />
+    <p class="t-start my-8">
+      <strong>Align left text</strong> Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Iste fuga porro enim sequi minus quibusdam, quia
+      molestias facere!
+    </p>
+    <p class="t-end my-8">
+      <strong>Align right text</strong> Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Dignissimos, perferendis asperiores maiores optio cumque
+      deleniti ad quos? Tempora.
+    </p>
+    <p class="t-center my-8">
+      <strong>Align center text</strong> Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Dolore, accusamus quam delectus quibusdam fugit
+      consequuntur velit est consectetur!
+    </p>
+    <p class="t-justify my-8">
+      <strong>Align justify text</strong> Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Laboriosam est explicabo error ut similique
+      exercitationem vitae porro. Fugiat.
+    </p>
+    <hr />
+    <p class="t-to-upper">Upper case text</p>
+    <p class="t-to-lower">Lower case text</p>
+    <p class="t-to-capitalize">Capitalize case text</p>
+    <hr />
+    <strong class="d-block t-primary">Color Primary</strong>
+    <strong class="d-block t-secondary">Color Secondary</strong>
+    <strong class="d-block t-success">Color Success</strong>
+    <strong class="d-block t-danger">Color Danger</strong>
+    <strong class="d-block t-warning">Color Warning</strong>
+    <strong class="d-block t-info">Color Info</strong>
+    <strong class="d-block t-dark">Color Dark</strong>
+    <strong class="d-block t-light">Color Light</strong>
+    <strong class="d-block t-gray">Color Gray</strong>
+    <hr />
+    <div class="pa-2 my-2 bg-primary">Background Primary</div>
+    <div class="pa-2 my-2 bg-secondary">Background Secondary</div>
+    <div class="pa-2 my-2 bg-success">Background Success</div>
+    <div class="pa-2 my-2 bg-danger">Background Danger</div>
+    <div class="pa-2 my-2 bg-warning">Background Warning</div>
+    <div class="pa-2 my-2 bg-info">Background Info</div>
+    <div class="pa-2 my-2 bg-dark">Background Dark</div>
+    <div class="pa-2 my-2 bg-light">Background Light</div>
+    <div class="pa-2 my-2 bg-gray">Background Gray</div>
+    <hr />
+    <div class="pa-2 my-2 bg-primary-1">Background Primary 1</div>
+    <div class="pa-2 my-2 bg-primary-2">Background Primary 2</div>
+    <div class="pa-2 my-2 bg-primary-3">Background Primary 3</div>
+    <div class="pa-2 my-2 bg-primary-4">Background Primary 4</div>
+    <div class="pa-2 my-2 bg-primary-5">Background Primary 5</div>
+    <div class="pa-2 my-2 bg-primary-6">Background Primary 6</div>
+    <div class="pa-2 my-2 bg-primary-7">Background Primary 7</div>
+    <div class="pa-2 my-2 bg-primary-8">Background Primary 8</div>
+    <div class="pa-2 my-2 bg-primary-9">Background Primary 9</div>
+    <div class="pa-2 my-2 bg-primary-10">Background Primary 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-secondary-1">Background Secondary 1</div>
+    <div class="pa-2 my-2 bg-secondary-2">Background Secondary 2</div>
+    <div class="pa-2 my-2 bg-secondary-3">Background Secondary 3</div>
+    <div class="pa-2 my-2 bg-secondary-4">Background Secondary 4</div>
+    <div class="pa-2 my-2 bg-secondary-5">Background Secondary 5</div>
+    <div class="pa-2 my-2 bg-secondary-6">Background Secondary 6</div>
+    <div class="pa-2 my-2 bg-secondary-7">Background Secondary 7</div>
+    <div class="pa-2 my-2 bg-secondary-8">Background Secondary 8</div>
+    <div class="pa-2 my-2 bg-secondary-9">Background Secondary 9</div>
+    <div class="pa-2 my-2 bg-secondary-10">Background Secondary 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-success-1">Background Success 1</div>
+    <div class="pa-2 my-2 bg-success-2">Background Success 2</div>
+    <div class="pa-2 my-2 bg-success-3">Background Success 3</div>
+    <div class="pa-2 my-2 bg-success-4">Background Success 4</div>
+    <div class="pa-2 my-2 bg-success-5">Background Success 5</div>
+    <div class="pa-2 my-2 bg-success-6">Background Success 6</div>
+    <div class="pa-2 my-2 bg-success-7">Background Success 7</div>
+    <div class="pa-2 my-2 bg-success-8">Background Success 8</div>
+    <div class="pa-2 my-2 bg-success-9">Background Success 9</div>
+    <div class="pa-2 my-2 bg-success-10">Background Success 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-danger-1">Background Danger 1</div>
+    <div class="pa-2 my-2 bg-danger-2">Background Danger 2</div>
+    <div class="pa-2 my-2 bg-danger-3">Background Danger 3</div>
+    <div class="pa-2 my-2 bg-danger-4">Background Danger 4</div>
+    <div class="pa-2 my-2 bg-danger-5">Background Danger 5</div>
+    <div class="pa-2 my-2 bg-danger-6">Background Danger 6</div>
+    <div class="pa-2 my-2 bg-danger-7">Background Danger 7</div>
+    <div class="pa-2 my-2 bg-danger-8">Background Danger 8</div>
+    <div class="pa-2 my-2 bg-danger-9">Background Danger 9</div>
+    <div class="pa-2 my-2 bg-danger-10">Background Danger 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-warning-1">Background Warning 1</div>
+    <div class="pa-2 my-2 bg-warning-2">Background Warning 2</div>
+    <div class="pa-2 my-2 bg-warning-3">Background Warning 3</div>
+    <div class="pa-2 my-2 bg-warning-4">Background Warning 4</div>
+    <div class="pa-2 my-2 bg-warning-5">Background Warning 5</div>
+    <div class="pa-2 my-2 bg-warning-6">Background Warning 6</div>
+    <div class="pa-2 my-2 bg-warning-7">Background Warning 7</div>
+    <div class="pa-2 my-2 bg-warning-8">Background Warning 8</div>
+    <div class="pa-2 my-2 bg-warning-9">Background Warning 9</div>
+    <div class="pa-2 my-2 bg-warning-10">Background Warning 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-info-1">Background Info 1</div>
+    <div class="pa-2 my-2 bg-info-2">Background Info 2</div>
+    <div class="pa-2 my-2 bg-info-3">Background Info 3</div>
+    <div class="pa-2 my-2 bg-info-4">Background Info 4</div>
+    <div class="pa-2 my-2 bg-info-5">Background Info 5</div>
+    <div class="pa-2 my-2 bg-info-6">Background Info 6</div>
+    <div class="pa-2 my-2 bg-info-7">Background Info 7</div>
+    <div class="pa-2 my-2 bg-info-8">Background Info 8</div>
+    <div class="pa-2 my-2 bg-info-9">Background Info 9</div>
+    <div class="pa-2 my-2 bg-info-10">Background Info 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-dark-1">Background Dark 1</div>
+    <div class="pa-2 my-2 bg-dark-2">Background Dark 2</div>
+    <div class="pa-2 my-2 bg-dark-3">Background Dark 3</div>
+    <div class="pa-2 my-2 bg-dark-4">Background Dark 4</div>
+    <div class="pa-2 my-2 bg-dark-5">Background Dark 5</div>
+    <div class="pa-2 my-2 bg-dark-6">Background Dark 6</div>
+    <div class="pa-2 my-2 bg-dark-7">Background Dark 7</div>
+    <div class="pa-2 my-2 bg-dark-8">Background Dark 8</div>
+    <div class="pa-2 my-2 bg-dark-9">Background Dark 9</div>
+    <div class="pa-2 my-2 bg-dark-10">Background Dark 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-light-1">Background Light 1</div>
+    <div class="pa-2 my-2 bg-light-2">Background Light 2</div>
+    <div class="pa-2 my-2 bg-light-3">Background Light 3</div>
+    <div class="pa-2 my-2 bg-light-4">Background Light 4</div>
+    <div class="pa-2 my-2 bg-light-5">Background Light 5</div>
+    <div class="pa-2 my-2 bg-light-6">Background Light 6</div>
+    <div class="pa-2 my-2 bg-light-7">Background Light 7</div>
+    <div class="pa-2 my-2 bg-light-8">Background Light 8</div>
+    <div class="pa-2 my-2 bg-light-9">Background Light 9</div>
+    <div class="pa-2 my-2 bg-light-10">Background Light 10</div>
+    <hr />
+    <div class="pa-2 my-2 bg-gray-1">Background Gray 1</div>
+    <div class="pa-2 my-2 bg-gray-2">Background Gray 2</div>
+    <div class="pa-2 my-2 bg-gray-3">Background Gray 3</div>
+    <div class="pa-2 my-2 bg-gray-4">Background Gray 4</div>
+    <div class="pa-2 my-2 bg-gray-5">Background Gray 5</div>
+    <div class="pa-2 my-2 bg-gray-6">Background Gray 6</div>
+    <div class="pa-2 my-2 bg-gray-7">Background Gray 7</div>
+    <div class="pa-2 my-2 bg-gray-8">Background Gray 8</div>
+    <div class="pa-2 my-2 bg-gray-9">Background Gray 9</div>
+    <div class="pa-2 my-2 bg-gray-10">Background Gray 10</div>
+    <hr />
+    <div class="pa-2 my-2 b-1">Border 1 Default Color</div>
+    <div class="pa-2 my-2 b-2">Border 2 Default Color</div>
+    <div class="pa-2 my-2 b-3">Border 3 Default Color</div>
+    <div class="pa-2 my-2 b-4">Border 4 Default Color</div>
+    <div class="pa-2 my-2 b-5">Border 5 Default Color</div>
+    <hr />
+    <div class="pa-2 my-2 b-primary">Border Color Primary</div>
+    <div class="pa-2 my-2 b-secondary">Border Color Secondary</div>
+    <div class="pa-2 my-2 b-success">Border Color Success</div>
+    <div class="pa-2 my-2 b-danger">Border Color Danger</div>
+    <div class="pa-2 my-2 b-warning">Border Color Warning</div>
+    <div class="pa-2 my-2 b-info">Border Color Info</div>
+    <div class="pa-2 my-2 b-dark">Border Color Dark</div>
+    <div class="pa-2 my-2 b-light">Border Color Light</div>
+    <div class="pa-2 my-2 b-gray">Border Color Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-primary">Border 1 Color Primary</div>
+    <div class="pa-2 my-2 b-1-secondary">Border 1 Color Secondary</div>
+    <div class="pa-2 my-2 b-1-success">Border 1 Color Success</div>
+    <div class="pa-2 my-2 b-1-danger">Border 1 Color Danger</div>
+    <div class="pa-2 my-2 b-1-warning">Border 1 Color Warning</div>
+    <div class="pa-2 my-2 b-1-info">Border 1 Color Info</div>
+    <div class="pa-2 my-2 b-1-dark">Border 1 Color Dark</div>
+    <div class="pa-2 my-2 b-1-light">Border 1 Color Light</div>
+    <div class="pa-2 my-2 b-1-gray">Border 1 Color Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-primary">Border 2 Color Primary</div>
+    <div class="pa-2 my-2 b-2-secondary">Border 2 Color Secondary</div>
+    <div class="pa-2 my-2 b-2-success">Border 2 Color Success</div>
+    <div class="pa-2 my-2 b-2-danger">Border 2 Color Danger</div>
+    <div class="pa-2 my-2 b-2-warning">Border 2 Color Warning</div>
+    <div class="pa-2 my-2 b-2-info">Border 2 Color Info</div>
+    <div class="pa-2 my-2 b-2-dark">Border 2 Color Dark</div>
+    <div class="pa-2 my-2 b-2-light">Border 2 Color Light</div>
+    <div class="pa-2 my-2 b-2-gray">Border 2 Color Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-primary">Border 3 Color Primary</div>
+    <div class="pa-2 my-2 b-3-secondary">Border 3 Color Secondary</div>
+    <div class="pa-2 my-2 b-3-success">Border 3 Color Success</div>
+    <div class="pa-2 my-2 b-3-danger">Border 3 Color Danger</div>
+    <div class="pa-2 my-2 b-3-warning">Border 3 Color Warning</div>
+    <div class="pa-2 my-2 b-3-info">Border 3 Color Info</div>
+    <div class="pa-2 my-2 b-3-dark">Border 3 Color Dark</div>
+    <div class="pa-2 my-2 b-3-light">Border 3 Color Light</div>
+    <div class="pa-2 my-2 b-3-gray">Border 3 Color Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-primary">Border 4 Color Primary</div>
+    <div class="pa-2 my-2 b-4-secondary">Border 4 Color Secondary</div>
+    <div class="pa-2 my-2 b-4-success">Border 4 Color Success</div>
+    <div class="pa-2 my-2 b-4-danger">Border 4 Color Danger</div>
+    <div class="pa-2 my-2 b-4-warning">Border 4 Color Warning</div>
+    <div class="pa-2 my-2 b-4-info">Border 4 Color Info</div>
+    <div class="pa-2 my-2 b-4-dark">Border 4 Color Dark</div>
+    <div class="pa-2 my-2 b-4-light">Border 4 Color Light</div>
+    <div class="pa-2 my-2 b-4-gray">Border 4 Color Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-primary">Border 5 Color Primary</div>
+    <div class="pa-2 my-2 b-5-secondary">Border 5 Color Secondary</div>
+    <div class="pa-2 my-2 b-5-success">Border 5 Color Success</div>
+    <div class="pa-2 my-2 b-5-danger">Border 5 Color Danger</div>
+    <div class="pa-2 my-2 b-5-warning">Border 5 Color Warning</div>
+    <div class="pa-2 my-2 b-5-info">Border 5 Color Info</div>
+    <div class="pa-2 my-2 b-5-dark">Border 5 Color Dark</div>
+    <div class="pa-2 my-2 b-5-light">Border 5 Color Light</div>
+    <div class="pa-2 my-2 b-5-gray">Border 5 Color Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-solid">Border Solid</div>
+    <div class="pa-2 my-2 b-dashed">Border Dashed</div>
+    <div class="pa-2 my-2 b-dotted">Border Dotted</div>
+    <div class="pa-2 my-2 b-double">Border Double</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid">Border 1 Solid</div>
+    <div class="pa-2 my-2 b-1-dashed">Border 1 Dashed</div>
+    <div class="pa-2 my-2 b-1-dotted">Border 1 Dotted</div>
+    <div class="pa-2 my-2 b-1-double">Border 1 Double</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid">Border 2 Solid</div>
+    <div class="pa-2 my-2 b-2-dashed">Border 2 Dashed</div>
+    <div class="pa-2 my-2 b-2-dotted">Border 2 Dotted</div>
+    <div class="pa-2 my-2 b-2-double">Border 2 Double</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid">Border 3 Solid</div>
+    <div class="pa-2 my-2 b-3-dashed">Border 3 Dashed</div>
+    <div class="pa-2 my-2 b-3-dotted">Border 3 Dotted</div>
+    <div class="pa-2 my-2 b-3-double">Border 3 Double</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid">Border 4 Solid</div>
+    <div class="pa-2 my-2 b-4-dashed">Border 4 Dashed</div>
+    <div class="pa-2 my-2 b-4-dotted">Border 4 Dotted</div>
+    <div class="pa-2 my-2 b-4-double">Border 4 Double</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid">Border 5 Solid</div>
+    <div class="pa-2 my-2 b-5-dashed">Border 5 Dashed</div>
+    <div class="pa-2 my-2 b-5-dotted">Border 5 Dotted</div>
+    <div class="pa-2 my-2 b-5-double">Border 5 Double</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-primary">Border 1 Solid Primary</div>
+    <div class="pa-2 my-2 b-1-dashed-primary">Border 1 Dashed Primary</div>
+    <div class="pa-2 my-2 b-1-dotted-primary">Border 1 Dotted Primary</div>
+    <div class="pa-2 my-2 b-1-double-primary">Border 1 Double Primary</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-primary">Border 2 Solid Primary</div>
+    <div class="pa-2 my-2 b-2-dashed-primary">Border 2 Dashed Primary</div>
+    <div class="pa-2 my-2 b-2-dotted-primary">Border 2 Dotted Primary</div>
+    <div class="pa-2 my-2 b-2-double-primary">Border 2 Double Primary</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-primary">Border 3 Solid Primary</div>
+    <div class="pa-2 my-2 b-3-dashed-primary">Border 3 Dashed Primary</div>
+    <div class="pa-2 my-2 b-3-dotted-primary">Border 3 Dotted Primary</div>
+    <div class="pa-2 my-2 b-3-double-primary">Border 3 Double Primary</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-primary">Border 4 Solid Primary</div>
+    <div class="pa-2 my-2 b-4-dashed-primary">Border 4 Dashed Primary</div>
+    <div class="pa-2 my-2 b-4-dotted-primary">Border 4 Dotted Primary</div>
+    <div class="pa-2 my-2 b-4-double-primary">Border 4 Double Primary</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-primary">Border 5 Solid Primary</div>
+    <div class="pa-2 my-2 b-5-dashed-primary">Border 5 Dashed Primary</div>
+    <div class="pa-2 my-2 b-5-dotted-primary">Border 5 Dotted Primary</div>
+    <div class="pa-2 my-2 b-5-double-primary">Border 5 Double Primary</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-secondary">Border 1 Solid Secondary</div>
+    <div class="pa-2 my-2 b-1-dashed-secondary">Border 1 Dashed Secondary</div>
+    <div class="pa-2 my-2 b-1-dotted-secondary">Border 1 Dotted Secondary</div>
+    <div class="pa-2 my-2 b-1-double-secondary">Border 1 Double Secondary</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-secondary">Border 2 Solid Secondary</div>
+    <div class="pa-2 my-2 b-2-dashed-secondary">Border 2 Dashed Secondary</div>
+    <div class="pa-2 my-2 b-2-dotted-secondary">Border 2 Dotted Secondary</div>
+    <div class="pa-2 my-2 b-2-double-secondary">Border 2 Double Secondary</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-secondary">Border 3 Solid Secondary</div>
+    <div class="pa-2 my-2 b-3-dashed-secondary">Border 3 Dashed Secondary</div>
+    <div class="pa-2 my-2 b-3-dotted-secondary">Border 3 Dotted Secondary</div>
+    <div class="pa-2 my-2 b-3-double-secondary">Border 3 Double Secondary</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-secondary">Border 4 Solid Secondary</div>
+    <div class="pa-2 my-2 b-4-dashed-secondary">Border 4 Dashed Secondary</div>
+    <div class="pa-2 my-2 b-4-dotted-secondary">Border 4 Dotted Secondary</div>
+    <div class="pa-2 my-2 b-4-double-secondary">Border 4 Double Secondary</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-secondary">Border 5 Solid Secondary</div>
+    <div class="pa-2 my-2 b-5-dashed-secondary">Border 5 Dashed Secondary</div>
+    <div class="pa-2 my-2 b-5-dotted-secondary">Border 5 Dotted Secondary</div>
+    <div class="pa-2 my-2 b-5-double-secondary">Border 5 Double Secondary</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-success">Border 1 Solid Success</div>
+    <div class="pa-2 my-2 b-1-dashed-success">Border 1 Dashed Success</div>
+    <div class="pa-2 my-2 b-1-dotted-success">Border 1 Dotted Success</div>
+    <div class="pa-2 my-2 b-1-double-success">Border 1 Double Success</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-success">Border 2 Solid Success</div>
+    <div class="pa-2 my-2 b-2-dashed-success">Border 2 Dashed Success</div>
+    <div class="pa-2 my-2 b-2-dotted-success">Border 2 Dotted Success</div>
+    <div class="pa-2 my-2 b-2-double-success">Border 2 Double Success</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-success">Border 3 Solid Success</div>
+    <div class="pa-2 my-2 b-3-dashed-success">Border 3 Dashed Success</div>
+    <div class="pa-2 my-2 b-3-dotted-success">Border 3 Dotted Success</div>
+    <div class="pa-2 my-2 b-3-double-success">Border 3 Double Success</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-success">Border 4 Solid Success</div>
+    <div class="pa-2 my-2 b-4-dashed-success">Border 4 Dashed Success</div>
+    <div class="pa-2 my-2 b-4-dotted-success">Border 4 Dotted Success</div>
+    <div class="pa-2 my-2 b-4-double-success">Border 4 Double Success</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-success">Border 5 Solid Success</div>
+    <div class="pa-2 my-2 b-5-dashed-success">Border 5 Dashed Success</div>
+    <div class="pa-2 my-2 b-5-dotted-success">Border 5 Dotted Success</div>
+    <div class="pa-2 my-2 b-5-double-success">Border 5 Double Success</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-danger">Border 1 Solid Danger</div>
+    <div class="pa-2 my-2 b-1-dashed-danger">Border 1 Dashed Danger</div>
+    <div class="pa-2 my-2 b-1-dotted-danger">Border 1 Dotted Danger</div>
+    <div class="pa-2 my-2 b-1-double-danger">Border 1 Double Danger</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-danger">Border 2 Solid Danger</div>
+    <div class="pa-2 my-2 b-2-dashed-danger">Border 2 Dashed Danger</div>
+    <div class="pa-2 my-2 b-2-dotted-danger">Border 2 Dotted Danger</div>
+    <div class="pa-2 my-2 b-2-double-danger">Border 2 Double Danger</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-danger">Border 3 Solid Danger</div>
+    <div class="pa-2 my-2 b-3-dashed-danger">Border 3 Dashed Danger</div>
+    <div class="pa-2 my-2 b-3-dotted-danger">Border 3 Dotted Danger</div>
+    <div class="pa-2 my-2 b-3-double-danger">Border 3 Double Danger</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-danger">Border 4 Solid Danger</div>
+    <div class="pa-2 my-2 b-4-dashed-danger">Border 4 Dashed Danger</div>
+    <div class="pa-2 my-2 b-4-dotted-danger">Border 4 Dotted Danger</div>
+    <div class="pa-2 my-2 b-4-double-danger">Border 4 Double Danger</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-danger">Border 5 Solid Danger</div>
+    <div class="pa-2 my-2 b-5-dashed-danger">Border 5 Dashed Danger</div>
+    <div class="pa-2 my-2 b-5-dotted-danger">Border 5 Dotted Danger</div>
+    <div class="pa-2 my-2 b-5-double-danger">Border 5 Double Danger</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-warning">Border 1 Solid Warning</div>
+    <div class="pa-2 my-2 b-1-dashed-warning">Border 1 Dashed Warning</div>
+    <div class="pa-2 my-2 b-1-dotted-warning">Border 1 Dotted Warning</div>
+    <div class="pa-2 my-2 b-1-double-warning">Border 1 Double Warning</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-warning">Border 2 Solid Warning</div>
+    <div class="pa-2 my-2 b-2-dashed-warning">Border 2 Dashed Warning</div>
+    <div class="pa-2 my-2 b-2-dotted-warning">Border 2 Dotted Warning</div>
+    <div class="pa-2 my-2 b-2-double-warning">Border 2 Double Warning</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-warning">Border 3 Solid Warning</div>
+    <div class="pa-2 my-2 b-3-dashed-warning">Border 3 Dashed Warning</div>
+    <div class="pa-2 my-2 b-3-dotted-warning">Border 3 Dotted Warning</div>
+    <div class="pa-2 my-2 b-3-double-warning">Border 3 Double Warning</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-warning">Border 4 Solid Warning</div>
+    <div class="pa-2 my-2 b-4-dashed-warning">Border 4 Dashed Warning</div>
+    <div class="pa-2 my-2 b-4-dotted-warning">Border 4 Dotted Warning</div>
+    <div class="pa-2 my-2 b-4-double-warning">Border 4 Double Warning</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-warning">Border 5 Solid Warning</div>
+    <div class="pa-2 my-2 b-5-dashed-warning">Border 5 Dashed Warning</div>
+    <div class="pa-2 my-2 b-5-dotted-warning">Border 5 Dotted Warning</div>
+    <div class="pa-2 my-2 b-5-double-warning">Border 5 Double Warning</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-info">Border 1 Solid Info</div>
+    <div class="pa-2 my-2 b-1-dashed-info">Border 1 Dashed Info</div>
+    <div class="pa-2 my-2 b-1-dotted-info">Border 1 Dotted Info</div>
+    <div class="pa-2 my-2 b-1-double-info">Border 1 Double Info</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-info">Border 2 Solid Info</div>
+    <div class="pa-2 my-2 b-2-dashed-info">Border 2 Dashed Info</div>
+    <div class="pa-2 my-2 b-2-dotted-info">Border 2 Dotted Info</div>
+    <div class="pa-2 my-2 b-2-double-info">Border 2 Double Info</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-info">Border 3 Solid Info</div>
+    <div class="pa-2 my-2 b-3-dashed-info">Border 3 Dashed Info</div>
+    <div class="pa-2 my-2 b-3-dotted-info">Border 3 Dotted Info</div>
+    <div class="pa-2 my-2 b-3-double-info">Border 3 Double Info</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-info">Border 4 Solid Info</div>
+    <div class="pa-2 my-2 b-4-dashed-info">Border 4 Dashed Info</div>
+    <div class="pa-2 my-2 b-4-dotted-info">Border 4 Dotted Info</div>
+    <div class="pa-2 my-2 b-4-double-info">Border 4 Double Info</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-info">Border 5 Solid Info</div>
+    <div class="pa-2 my-2 b-5-dashed-info">Border 5 Dashed Info</div>
+    <div class="pa-2 my-2 b-5-dotted-info">Border 5 Dotted Info</div>
+    <div class="pa-2 my-2 b-5-double-info">Border 5 Double Info</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-dark">Border 1 Solid Dark</div>
+    <div class="pa-2 my-2 b-1-dashed-dark">Border 1 Dashed Dark</div>
+    <div class="pa-2 my-2 b-1-dotted-dark">Border 1 Dotted Dark</div>
+    <div class="pa-2 my-2 b-1-double-dark">Border 1 Double Dark</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-dark">Border 2 Solid Dark</div>
+    <div class="pa-2 my-2 b-2-dashed-dark">Border 2 Dashed Dark</div>
+    <div class="pa-2 my-2 b-2-dotted-dark">Border 2 Dotted Dark</div>
+    <div class="pa-2 my-2 b-2-double-dark">Border 2 Double Dark</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-dark">Border 3 Solid Dark</div>
+    <div class="pa-2 my-2 b-3-dashed-dark">Border 3 Dashed Dark</div>
+    <div class="pa-2 my-2 b-3-dotted-dark">Border 3 Dotted Dark</div>
+    <div class="pa-2 my-2 b-3-double-dark">Border 3 Double Dark</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-dark">Border 4 Solid Dark</div>
+    <div class="pa-2 my-2 b-4-dashed-dark">Border 4 Dashed Dark</div>
+    <div class="pa-2 my-2 b-4-dotted-dark">Border 4 Dotted Dark</div>
+    <div class="pa-2 my-2 b-4-double-dark">Border 4 Double Dark</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-dark">Border 5 Solid Dark</div>
+    <div class="pa-2 my-2 b-5-dashed-dark">Border 5 Dashed Dark</div>
+    <div class="pa-2 my-2 b-5-dotted-dark">Border 5 Dotted Dark</div>
+    <div class="pa-2 my-2 b-5-double-dark">Border 5 Double Dark</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-light">Border 1 Solid Light</div>
+    <div class="pa-2 my-2 b-1-dashed-light">Border 1 Dashed Light</div>
+    <div class="pa-2 my-2 b-1-dotted-light">Border 1 Dotted Light</div>
+    <div class="pa-2 my-2 b-1-double-light">Border 1 Double Light</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-light">Border 2 Solid Light</div>
+    <div class="pa-2 my-2 b-2-dashed-light">Border 2 Dashed Light</div>
+    <div class="pa-2 my-2 b-2-dotted-light">Border 2 Dotted Light</div>
+    <div class="pa-2 my-2 b-2-double-light">Border 2 Double Light</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-light">Border 3 Solid Light</div>
+    <div class="pa-2 my-2 b-3-dashed-light">Border 3 Dashed Light</div>
+    <div class="pa-2 my-2 b-3-dotted-light">Border 3 Dotted Light</div>
+    <div class="pa-2 my-2 b-3-double-light">Border 3 Double Light</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-light">Border 4 Solid Light</div>
+    <div class="pa-2 my-2 b-4-dashed-light">Border 4 Dashed Light</div>
+    <div class="pa-2 my-2 b-4-dotted-light">Border 4 Dotted Light</div>
+    <div class="pa-2 my-2 b-4-double-light">Border 4 Double Light</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-light">Border 5 Solid Light</div>
+    <div class="pa-2 my-2 b-5-dashed-light">Border 5 Dashed Light</div>
+    <div class="pa-2 my-2 b-5-dotted-light">Border 5 Dotted Light</div>
+    <div class="pa-2 my-2 b-5-double-light">Border 5 Double Light</div>
+    <hr />
+    <div class="pa-2 my-2 b-1-solid-gray">Border 1 Solid Gray</div>
+    <div class="pa-2 my-2 b-1-dashed-gray">Border 1 Dashed Gray</div>
+    <div class="pa-2 my-2 b-1-dotted-gray">Border 1 Dotted Gray</div>
+    <div class="pa-2 my-2 b-1-double-gray">Border 1 Double Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-2-solid-gray">Border 2 Solid Gray</div>
+    <div class="pa-2 my-2 b-2-dashed-gray">Border 2 Dashed Gray</div>
+    <div class="pa-2 my-2 b-2-dotted-gray">Border 2 Dotted Gray</div>
+    <div class="pa-2 my-2 b-2-double-gray">Border 2 Double Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-3-solid-gray">Border 3 Solid Gray</div>
+    <div class="pa-2 my-2 b-3-dashed-gray">Border 3 Dashed Gray</div>
+    <div class="pa-2 my-2 b-3-dotted-gray">Border 3 Dotted Gray</div>
+    <div class="pa-2 my-2 b-3-double-gray">Border 3 Double Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-4-solid-gray">Border 4 Solid Gray</div>
+    <div class="pa-2 my-2 b-4-dashed-gray">Border 4 Dashed Gray</div>
+    <div class="pa-2 my-2 b-4-dotted-gray">Border 4 Dotted Gray</div>
+    <div class="pa-2 my-2 b-4-double-gray">Border 4 Double Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-5-solid-gray">Border 5 Solid Gray</div>
+    <div class="pa-2 my-2 b-5-dashed-gray">Border 5 Dashed Gray</div>
+    <div class="pa-2 my-2 b-5-dotted-gray">Border 5 Dotted Gray</div>
+    <div class="pa-2 my-2 b-5-double-gray">Border 5 Double Gray</div>
+    <hr />
+    <div class="pa-2 my-2 b-1 radius-1">Radius 1</div>
+    <div class="pa-2 my-2 b-1 radius-2">Radius 2</div>
+    <div class="pa-2 my-2 b-1 radius-3">Radius 3</div>
+    <div class="pa-2 my-2 b-1 radius-4">Radius 4</div>
+    <div class="pa-2 my-2 b-1 radius-5">Radius 5</div>
+    <div class="pa-2 my-2 b-1 radius-6">Radius 6</div>
+    <div class="pa-2 my-2 b-1 radius-7">Radius 7</div>
+    <div class="pa-2 my-2 b-1 radius-8">Radius 8</div>
+    <div class="pa-2 my-2 b-1 radius-9">Radius 9</div>
+    <div class="pa-2 my-2 b-1 radius-10">Radius 10</div>
+    <hr />
+    <div
+      style="width: 150px; height: 150px"
+      class="pa-2 my-2 b-1 t-center circle"
+    >
+      Circle
+    </div>
+    <hr />
+    <div
+      style="width: 250px; height: 150px"
+      class="pa-2 my-2 b-1 t-center ellipse"
+    >
+      Ellipse
+    </div>
+    <hr />
+    <div class="pa-2 my-2 radius-4 shadow">Shadowed Default</div>
+    <div class="pa-2 my-2 radius-4 shadow-primary">Shadowed Primary</div>
+    <div class="pa-2 my-2 radius-4 shadow-secondary">Shadowed Secondary</div>
+    <div class="pa-2 my-2 radius-4 shadow-success">Shadowed Success</div>
+    <div class="pa-2 my-2 radius-4 shadow-danger">Shadowed Danger</div>
+    <div class="pa-2 my-2 radius-4 shadow-warning">Shadowed Warning</div>
+    <div class="pa-2 my-2 radius-4 shadow-info">Shadowed Info</div>
+    <div class="pa-2 my-2 radius-4 shadow-dark">Shadowed Dark</div>
+    <div class="pa-2 my-2 radius-4 shadow-light">Shadowed Light</div>
+    <div class="pa-2 my-2 radius-4 shadow-gray">Shadowed Gray</div>
+  </body>
+</html>
